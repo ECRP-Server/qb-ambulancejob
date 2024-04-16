@@ -40,6 +40,7 @@ local Translations = {
         safe = 'Hospital Safe',
         pb_hospital = 'Pillbox Hospital',
         paleto_hospital = 'Paleto Hospital',
+        marina_hospital = 'Marina Bay Hospital',
         pain_message = 'Your %{limb} feels %{severity}',
         many_places = 'You have pain in many places...',
         bleed_alert = 'You are %{bleedstate}',

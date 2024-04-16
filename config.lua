@@ -39,6 +39,7 @@ Config.Locations = {                -- Edit the various interaction points for p
     ['checking'] = {
         [1] = vector3(308.19, -595.35, 43.29),
         [2] = vector3(-254.54, 6331.78, 32.43), -- paleto
+        [3] = vector3(-532.1, 7380.0, 12.84) -- marina
     },
     ['duty'] = {
         [1] = vector3(311.18, -599.25, 43.29),
@@ -55,6 +56,7 @@ Config.Locations = {                -- Edit the various interaction points for p
     ['armory'] = {
         [1] = vector3(309.93, -602.94, 43.29),
         [2] = vector3(-245.13, 6315.71, 32.82),
+        [3] = vector3(-533.77, 7375.96, 12.84),
     },
     ['roof'] = {
         [1] = vector4(338.5, -583.85, 74.16, 245.5),
@@ -78,6 +80,11 @@ Config.Locations = {                -- Edit the various interaction points for p
         { coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672 },
         { coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672 },
         { coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672 },
+        -- marina
+        { coords = vector4(-550.78, 7390.12, 12.39, 321.91), taken = false, model = 2117668672 },
+        { coords = vector4(-555.20, 7384.78, 12.39, 141.91), taken = false, model = 2117668672 },
+        { coords = vector4(-553.07, 7383.12, 12.39, 141.91), taken = false, model = 2117668672 },
+        { coords = vector4(-550.88, 7381.40, 12.39, 141.91), taken = false, model = 2117668672 },
     },
     ['jailbeds'] = {
         { coords = vector4(1761.96, 2597.74, 45.66, 270.14), taken = false, model = 2117668672 },
@@ -109,9 +116,20 @@ Config.Locations = {                -- Edit the various interaction points for p
                 [3] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
             },
         },
+        [3]  = {
+            ['name'] = Lang:t('info.marina_hospital'),
+            ['location'] = vector3(-532.1, 7380.0, 12.84),
+            ['beds'] = {
+                [1] = { coords = vector4(-550.78, 7390.12, 12.39, 136.79), taken = false, model = 2117668672 },
+                [2] = { coords = vector4(-555.20, 7384.78, 12.39, 318.5), taken = false, model = 2117668672 },
+                [3]= { coords = vector4(-553.07, 7383.12, 12.39, 318.5), taken = false, model = 2117668672 },
+                [4] = { coords = vector4(-550.88, 7381.40, 12.39, 318.5), taken = false, model = 2117668672 },
+            },
+        },
     },
     ['stations'] = {
-        { label = Lang:t('info.pb_hospital'), coords = vector3(304.27, -600.33, 43.28) }
+        { label = Lang:t('info.pb_hospital'), coords = vector3(304.27, -600.33, 43.28) },
+        { label = Lang:t('info.marina_hospital'), coords = vector3(-508.68, 7364.84, 12.84) },        
     }
 }
 
